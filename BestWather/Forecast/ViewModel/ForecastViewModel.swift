@@ -9,7 +9,12 @@ import Observation
 
 @Observable
 final class ForecastViewModel {
+
+    private let forecastService: ForecastService
     
+    init(forecastService: ForecastService) {
+        self.forecastService = forecastService
+    }
     
     
 }

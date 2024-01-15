@@ -18,12 +18,16 @@ final class OpenWeatherProviderAdapter: WeatherProvider {
     }
 
     func getWeather(for city: String) async -> Weather? {
-        let weatherDto = await provider.getWeather(for: city)
+        guard let weatherDto = await provider.getWeather(for: city) else {
+            return nil
+        }
         return mapper.toDomain(weatherDto)
     }
     
     func getWeather(for location: (Double, Double)) async -> Weather? {
-        let weatherDto = await provider.getWeather(for: location)
+        guard let weatherDto = await provider.getWeather(for: location) else {
+            return nil
+        }
         return mapper.toDomain(weatherDto)
     }
     

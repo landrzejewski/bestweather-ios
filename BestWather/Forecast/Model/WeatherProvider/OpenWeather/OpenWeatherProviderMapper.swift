@@ -9,7 +9,7 @@ import Foundation
 
 final class OpenWeatherProviderMapper {
     
-    func toDomain(weatherDto: WeatherDto) -> Weather {
+    func toDomain(_ weatherDto: WeatherDto) -> Weather {
         Weather(city: weatherDto.city.name, forecast: weatherDto.forecast.map(toDomain(forecastDto:)))
     }
     
