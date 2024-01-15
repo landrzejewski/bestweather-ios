@@ -1,5 +1,5 @@
 //
-//  OpenApiWeatherProvider.swift
+//  OpenWeatherProvider.swift
 //  BestWather
 //
 //  Created by Łukasz Andrzejewski on 15/01/2024.
@@ -7,10 +7,15 @@
 
 import Foundation
 
-final class WeatherProvider {
+final class OpenWeatherProvider {
     
-    private let url = "https://api.openweathermap.org/data/2.5/forecast/daily?cnt=7&units=metric&APPID=b933866e6489f58987b2898c89f542b8"
-    private let decoder = JSONDecoder()
+    private let url: String
+    private let decoder: JSONDecoder
+    
+    init(url: String, decoder: JSONDecoder = JSONDecoder()) {
+        self.decoder = decoder
+        self.url = url
+    }
     
     func getWeather(for city: String) async -> WeatherDto? {
         guard let url = URL(string: "\(url)&q=\(city)") else {
