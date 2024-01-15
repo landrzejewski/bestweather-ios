@@ -6,20 +6,17 @@
 //
 
 import SwiftUI
+import Factory
 
 struct ForecastRouterView: View {
     
     @Environment(ForecastRouter.self) var router
-    private let componentsFactory: ForecastComponentsFactory
-    
-    init(componentsFactory: ForecastComponentsFactory) {
-        self.componentsFactory = componentsFactory
-    }
+    @Injected(\.forecastViewModel) var forecastViewModel
     
     var body: some View {
         switch router.route {
         case .forecast:
-            ForecastView(viewModel: componentsFactory.getForecastViewModel())
+            ForecastView(viewModel: forecastViewModel)
         case .forecastDetails(let viewModel):
             ForecastDetailsView(viewModel: viewModel)
         }

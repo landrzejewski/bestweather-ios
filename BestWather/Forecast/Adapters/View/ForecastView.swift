@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Factory
 
 struct ForecastView: View {
     
@@ -56,6 +57,6 @@ struct ForecastView: View {
 }
 
 #Preview {
-    let viewModel = ComponentsFactory().forecastFactory.getPreviewForecastViewModel()
+    let viewModel = Container.shared.fakeForecastViewModel()
     return ForecastView(viewModel: viewModel)
 }

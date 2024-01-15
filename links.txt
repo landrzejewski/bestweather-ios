@@ -1,0 +1,8 @@
+Routing
+
+https://www.curiousalgorithm.com/blog
+https://davidgarywood.com/swiftui-router-pattern-2-0
+https://canopas.github.io/UIPilot
+https://github.com/frzi/SwiftUIRouter
+https://blorenzop.medium.com/routing-navigation-in-swiftui-f1f8ff818937
+https://betterprogramming.pub/routing-in-swiftui-with-navigationstack-aa8bb9b032de

@@ -8,17 +8,14 @@
 import SwiftUI
 
 struct MainView: View {
-
-    let componentsFactory: ComponentsFactory
     
-    init(componentsFactory: ComponentsFactory) {
-        self.componentsFactory = componentsFactory
+    init() {
         UITabBar.appearance().unselectedItemTintColor = .lightGray
     }
     
     var body: some View {
         TabView {
-            ForecastRouterView(componentsFactory: componentsFactory.forecastFactory)
+            ForecastRouterView()
                 .environment(ForecastRouter())
                 .tabItem {
                     Image(systemName: "sun.max.fill")

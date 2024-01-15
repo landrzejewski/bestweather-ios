@@ -11,7 +11,7 @@ import SwiftUI
 struct BestWatherApp: App {
     var body: some Scene {
         WindowGroup {
-            MainView(componentsFactory: ComponentsFactory())
+            MainView()
         }
     }
 }
