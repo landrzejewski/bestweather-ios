@@ -15,7 +15,7 @@ final class OpenWeatherProviderMapper {
     
     private func toDomain(forecastDto: ForecastDto) -> DayForecast {
         let date = Date(timeIntervalSince1970: forecastDto.date)
-        let description = forecastDto.description.first?.text ?? ""
+        let description = forecastDto.description.first?.text.capitalized ?? ""
         let temperature = forecastDto.temperature.day
         let pressure = forecastDto.pressure
         let icon = map(icon: forecastDto.description.first?.icon ?? "")

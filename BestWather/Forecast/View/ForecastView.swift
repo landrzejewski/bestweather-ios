@@ -20,15 +20,6 @@ struct ForecastView: View {
                 if let currentForecast = viewModel.currentForecast {
                     Text(viewModel.city)
                         .defaultStyle(size: 34)
-                        .opacity(viewModel.isUnlocked ? 0.8 : 1)
-                    VStack {
-                        Text(viewModel.lastSeen ?? "")
-                            .foregroundColor(.white)
-                            .font(.system(size: 12))
-                        Text(viewModel.lastPeek ?? "")
-                            .foregroundColor(.white)
-                            .font(.system(size: 12))
-                    }
                     Spacer()
                     Image(systemName: currentForecast.icon)
                         .symbol(width: 200, height: 200)
@@ -36,7 +27,6 @@ struct ForecastView: View {
                         .padding()
                     Text(currentForecast.description)
                         .defaultStyle(size: 32)
-                        .onTapGesture(count: 3) { viewModel.isUnlocked.toggle() }
                     HStack(spacing: 24){
                         Text(currentForecast.temperature)
                             .defaultStyle(size: 24)
@@ -62,6 +52,6 @@ struct ForecastView: View {
 }
 
 #Preview {
-    let viewModel = ForecastViewModel(forecastService: ComponentsFactory().getPreviewForecastViewModel())
+    let viewModel = ComponentsFactory().getPreviewForecastViewModel()
     return ForecastView(viewModel: viewModel)
 }

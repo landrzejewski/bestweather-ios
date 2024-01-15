@@ -29,7 +29,6 @@
 		B270FFBB2B5547CE003297AB /* FakeWeatherProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B270FFBA2B5547CE003297AB /* FakeWeatherProvider.swift */; };
 		B270FFBD2B5548DA003297AB /* OpenWeatherProviderAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B270FFBC2B5548DA003297AB /* OpenWeatherProviderAdapter.swift */; };
 		B270FFBF2B55495C003297AB /* OpenWeatherProviderMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B270FFBE2B55495C003297AB /* OpenWeatherProviderMapper.swift */; };
-		B270FFC52B555011003297AB /* DateFormatter+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B270FFC12B555010003297AB /* DateFormatter+ext.swift */; };
 		B270FFC62B555011003297AB /* Text+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B270FFC22B555011003297AB /* Text+ext.swift */; };
 		B270FFC82B555011003297AB /* Image+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B270FFC42B555011003297AB /* Image+ext.swift */; };
 		B270FFCB2B555055003297AB /* DayForecastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B270FFC92B555055003297AB /* DayForecastView.swift */; };
@@ -61,7 +60,6 @@
 		B270FFBA2B5547CE003297AB /* FakeWeatherProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeWeatherProvider.swift; sourceTree = "<group>"; };
 		B270FFBC2B5548DA003297AB /* OpenWeatherProviderAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenWeatherProviderAdapter.swift; sourceTree = "<group>"; };
 		B270FFBE2B55495C003297AB /* OpenWeatherProviderMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenWeatherProviderMapper.swift; sourceTree = "<group>"; };
-		B270FFC12B555010003297AB /* DateFormatter+ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DateFormatter+ext.swift"; sourceTree = "<group>"; };
 		B270FFC22B555011003297AB /* Text+ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Text+ext.swift"; sourceTree = "<group>"; };
 		B270FFC42B555011003297AB /* Image+ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Image+ext.swift"; sourceTree = "<group>"; };
 		B270FFC92B555055003297AB /* DayForecastView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayForecastView.swift; sourceTree = "<group>"; };
@@ -204,7 +202,6 @@
 		B270FFC02B554FF9003297AB /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				B270FFC12B555010003297AB /* DateFormatter+ext.swift */,
 				B270FFC42B555011003297AB /* Image+ext.swift */,
 				B270FFC22B555011003297AB /* Text+ext.swift */,
 			);
@@ -295,7 +292,6 @@
 				B270FFB62B554553003297AB /* ForecastService.swift in Sources */,
 				B270FF992B5535E6003297AB /* Router.swift in Sources */,
 				B270FFC62B555011003297AB /* Text+ext.swift in Sources */,
-				B270FFC52B555011003297AB /* DateFormatter+ext.swift in Sources */,
 				B270FFA82B553CB6003297AB /* TemperatureDto.swift in Sources */,
 				B270FFB22B554420003297AB /* DayForecast.swift in Sources */,
 				B270FFAC2B553D54003297AB /* ForecastDto.swift in Sources */,

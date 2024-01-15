@@ -2,7 +2,7 @@
 //  Text+ext.swift
 //  Best Weather
 //
-//  Created by Łukasz Andrzejewski on 19/11/2023.
+//  Created by Łukasz Andrzejewski on 15/01/2024.
 //
 
 import SwiftUI
