@@ -34,6 +34,7 @@
 		B270FFCB2B555055003297AB /* DayForecastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B270FFC92B555055003297AB /* DayForecastView.swift */; };
 		B270FFCC2B555055003297AB /* ForecastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B270FFCA2B555055003297AB /* ForecastView.swift */; };
 		B270FFCE2B5550AB003297AB /* DayForecastViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B270FFCD2B5550AB003297AB /* DayForecastViewModel.swift */; };
+		B270FFD22B556163003297AB /* DayForecastViewModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B270FFD12B556163003297AB /* DayForecastViewModelMapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +66,7 @@
 		B270FFC92B555055003297AB /* DayForecastView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayForecastView.swift; sourceTree = "<group>"; };
 		B270FFCA2B555055003297AB /* ForecastView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastView.swift; sourceTree = "<group>"; };
 		B270FFCD2B5550AB003297AB /* DayForecastViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayForecastViewModel.swift; sourceTree = "<group>"; };
+		B270FFD12B556163003297AB /* DayForecastViewModelMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayForecastViewModelMapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				B270FFA02B553971003297AB /* ForecastViewModel.swift */,
+				B270FFD12B556163003297AB /* DayForecastViewModelMapper.swift */,
 				B270FFCD2B5550AB003297AB /* DayForecastViewModel.swift */,
 			);
 			path = ViewModel;
@@ -294,6 +297,7 @@
 				B270FFC62B555011003297AB /* Text+ext.swift in Sources */,
 				B270FFA82B553CB6003297AB /* TemperatureDto.swift in Sources */,
 				B270FFB22B554420003297AB /* DayForecast.swift in Sources */,
+				B270FFD22B556163003297AB /* DayForecastViewModelMapper.swift in Sources */,
 				B270FFAC2B553D54003297AB /* ForecastDto.swift in Sources */,
 				B270FF972B55357E003297AB /* Route.swift in Sources */,
 				B270FFB92B554686003297AB /* WeatherProvider.swift in Sources */,
