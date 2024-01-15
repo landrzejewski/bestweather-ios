@@ -5,34 +5,43 @@
 //  Created by Łukasz Andrzejewski on 15/01/2024.
 //
 
+import Foundation
 import Observation
+import Combine
 
 @Observable
 final class ForecastViewModel {
 
     private let forecastService: ForecastService
+    private let locationService: LocationService
     private let mapper: DayForecastViewModelMapper
+    private var subscriptions = Set<AnyCancellable>()
     
     var city = ""
     var currentForecast: DayForecastViewModel?
     var nextDaysForecast: [DayForecastViewModel] = []
     
-    init(forecastService: ForecastService, mapper: DayForecastViewModelMapper = DayForecastViewModelMapper()) {
+    init(forecastService: ForecastService, locationService: LocationService, mapper: DayForecastViewModelMapper = DayForecastViewModelMapper()) {
         self.forecastService = forecastService
+        self.locationService = locationService
         self.mapper = mapper
-        refreshWeather()
+        locationService.location
+            .debounce(for: .milliseconds(500), scheduler: DispatchQueue.main)
+            .sink(receiveValue: onNewCoordinates(coordinates:))
+            .store(in: &subscriptions)
+        locationService.refreshLocation()
     }
     
-    func refreshWeather() {
+    private func onNewCoordinates(coordinates: (Double, Double)) {
         Task {
-            guard let weather = await forecastService.getWeather(for: "Warsaw") else {
+            guard let weather = await forecastService.getWeather(for: coordinates) else {
                 return
             }
-            city = weather.city
             let forecast = mapper.map(forecast: weather.forecast)
-            currentForecast = forecast.first
-            nextDaysForecast = Array(forecast.dropFirst())
+            self.city = weather.city
+            self.currentForecast = forecast.first
+            self.nextDaysForecast = Array(forecast.dropFirst())
         }
     }
-    
+
 }

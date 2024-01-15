@@ -1,13 +1,13 @@
 //
-//  Route.swift
+//  ForecastRoute.swift
 //  BestWather
 //
 //  Created by Łukasz Andrzejewski on 15/01/2024.
 //
 
-enum Route {
+enum ForecastRoute {
 
     case forecast
-    case profile
+    case forecastDetails(DayForecastViewModel)
     
 }

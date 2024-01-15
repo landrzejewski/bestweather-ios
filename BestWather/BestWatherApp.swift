@@ -12,7 +12,6 @@ struct BestWatherApp: App {
     var body: some Scene {
         WindowGroup {
             MainView(componentsFactory: ComponentsFactory())
-                .environment(Router())
         }
     }
 }

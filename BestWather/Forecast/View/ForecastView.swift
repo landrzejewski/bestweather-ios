@@ -10,6 +10,7 @@ import SwiftUI
 struct ForecastView: View {
     
     @State var viewModel: ForecastViewModel
+    @Environment(ForecastRouter.self) private var router
     
     var body: some View {
         ZStack {
@@ -25,6 +26,9 @@ struct ForecastView: View {
                         .symbol(width: 200, height: 200)
                         .padding(.bottom, 24)
                         .padding()
+                        .onTapGesture {
+                            router.route = .forecastDetails(currentForecast)
+                        }
                     Text(currentForecast.description)
                         .defaultStyle(size: 32)
                     HStack(spacing: 24){
@@ -52,6 +56,6 @@ struct ForecastView: View {
 }
 
 #Preview {
-    let viewModel = ComponentsFactory().getPreviewForecastViewModel()
+    let viewModel = ComponentsFactory().forecastFactory.getPreviewForecastViewModel()
     return ForecastView(viewModel: viewModel)
 }
