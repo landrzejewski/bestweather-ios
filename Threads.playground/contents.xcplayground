@@ -3,5 +3,6 @@
     <pages>
         <page name='GDC'/>
         <page name='Operations'/>
+        <page name='Combine'/>
     </pages>
 </playground>
