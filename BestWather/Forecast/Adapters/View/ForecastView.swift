@@ -12,12 +12,26 @@ struct ForecastView: View {
     
     @State var viewModel: ForecastViewModel
     @Environment(ForecastRouter.self) private var router
+    @Environment(\.scenePhase) private var scenePhase
+    @State private var showSettings = false
     
     var body: some View {
         ZStack {
             LinearGradient(gradient: Gradient(colors: [.top, .bottom]), startPoint: .top, endPoint: .bottom)
                 .edgesIgnoringSafeArea(.all)
             VStack {
+                HStack {
+                    Image(systemName: "location")
+                        .template(width: 20, height: 20)
+                        .onTapGesture { viewModel.refreshForecastForCurrentLocation() }
+                        .accessibility(identifier: "location")
+                    Spacer()
+                    Image(systemName: "slider.horizontal.3")
+                        .template(width: 20, height: 20)
+                        .onTapGesture { showSettings = true }
+                        .accessibility(identifier: "settings")
+                }
+                .padding()
                 Spacer()
                 if let currentForecast = viewModel.currentForecast {
                     Text(viewModel.city)
@@ -52,8 +66,13 @@ struct ForecastView: View {
                 }
             }
         }
+        .sheet(isPresented: $showSettings) { ForecastSettingsView() }
+        .onChange(of: scenePhase) { oldValue, newValue in
+            if newValue == .active {
+                viewModel.refreshForecast()
+            }
+        }
     }
-    
 }
 
 #Preview {

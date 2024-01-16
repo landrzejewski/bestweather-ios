@@ -33,17 +33,25 @@ final class ForecastViewModel {
             .debounce(for: .milliseconds(500), scheduler: DispatchQueue.main)
             .sink(receiveValue: onNewCoordinates(coordinates:))
             .store(in: &subscriptions)
-        
+    }
+    
+    func refreshForecast() {
         if !storedCity.isEmpty {
-            Task {
-                guard let weather = await forecastService.getWeather(for: city) else {
-                    return
-                }
-                await onWeatherRefreshed(weather: weather)
-            }
-        } else {
-            locationService.refreshLocation()
+            refreshForecast(for: city)
         }
+    }
+    
+    func refreshForecast(for city: String) {
+        Task {
+            guard let weather = await forecastService.getWeather(for: city) else {
+                return
+            }
+            await onWeatherRefreshed(weather: weather)
+        }
+    }
+    
+    func refreshForecastForCurrentLocation() {
+        locationService.refreshLocation()
     }
     
     private func onNewCoordinates(coordinates: (Double, Double)) {

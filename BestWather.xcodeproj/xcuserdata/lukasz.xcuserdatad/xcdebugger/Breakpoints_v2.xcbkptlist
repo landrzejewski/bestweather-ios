@@ -18,5 +18,100 @@
             endingLineNumber = "16">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "857A4B43-6472-41A8-B145-2BEF199B6515"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BestWather/Forecast/Adapters/View/ForecastView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F8464ED4-2924-4FE5-B351-54899FD6F5DD"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BestWather/Forecast/Adapters/View/ForecastViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "refreshForecast()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E303F625-117B-4684-B4D3-A05700DFD4D6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BestWather/Forecast/Adapters/View/ForecastViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "refreshForecast(for:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E303F625-117B-4684-B4D3-A05700DFD4D6 - 57ac8b761903b85"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BestWather.ForecastViewModel.refreshForecast(for: Swift.String) -&gt; ()"
+                  moduleName = "BestWather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lukasz/Desktop/BestWather/BestWather/Forecast/Adapters/View/ForecastViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "112">
+               </Location>
+               <Location
+                  uuid = "E303F625-117B-4684-B4D3-A05700DFD4D6 - df7ac26f1c385133"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable () async -&gt; () in BestWather.ForecastViewModel.refreshForecast(for: Swift.String) -&gt; ()"
+                  moduleName = "BestWather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lukasz/Desktop/BestWather/BestWather/Forecast/Adapters/View/ForecastViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  uuid = "E303F625-117B-4684-B4D3-A05700DFD4D6 - d3e4789f6fe1787"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async -&gt; () in BestWather.ForecastViewModel.refreshForecast(for: Swift.String) -&gt; ()"
+                  moduleName = "BestWather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lukasz/Desktop/BestWather/BestWather/Forecast/Adapters/View/ForecastViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "36">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
