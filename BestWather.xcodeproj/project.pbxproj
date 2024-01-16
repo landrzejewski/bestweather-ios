@@ -19,6 +19,7 @@
 		B25A82842B56A774003319E6 /* URLSession+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25A82822B56A774003319E6 /* URLSession+ext.swift */; };
 		B25A82862B56A7D2003319E6 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25A82852B56A7D2003319E6 /* ProfileViewModel.swift */; };
 		B25A828A2B56C5F7003319E6 /* ForecastSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25A82892B56C5F7003319E6 /* ForecastSettingsView.swift */; };
+		B25A828C2B56CE85003319E6 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = B25A828B2B56CE85003319E6 /* data.json */; };
 		B270FF852B553472003297AB /* BestWatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B270FF842B553472003297AB /* BestWatherApp.swift */; };
 		B270FF872B553472003297AB /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B270FF862B553472003297AB /* MainView.swift */; };
 		B270FF892B553473003297AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B270FF882B553473003297AB /* Assets.xcassets */; };
@@ -70,6 +71,7 @@
 		B25A82822B56A774003319E6 /* URLSession+ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLSession+ext.swift"; sourceTree = "<group>"; };
 		B25A82852B56A7D2003319E6 /* ProfileViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		B25A82892B56C5F7003319E6 /* ForecastSettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastSettingsView.swift; sourceTree = "<group>"; };
+		B25A828B2B56CE85003319E6 /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		B266BDCE2B5672900094A5AA /* Threads.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Threads.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		B270FF812B553472003297AB /* BestWather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BestWather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B270FF842B553472003297AB /* BestWatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestWatherApp.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 				B266BDCE2B5672900094A5AA /* Threads.playground */,
 				B270FFEB2B5588F7003297AB /* links.txt */,
 				B25A826E2B56A3F6003319E6 /* data.txt */,
+				B25A828B2B56CE85003319E6 /* data.json */,
 				B270FF832B553472003297AB /* BestWather */,
 				B270FF822B553472003297AB /* Products */,
 			);
@@ -379,6 +382,7 @@
 				B25A826F2B56A3F6003319E6 /* data.txt in Resources */,
 				B270FF8C2B553473003297AB /* Preview Assets.xcassets in Resources */,
 				B270FF892B553473003297AB /* Assets.xcassets in Resources */,
+				B25A828C2B56CE85003319E6 /* data.json in Resources */,
 				B270FFEC2B5588F7003297AB /* links.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -4,5 +4,6 @@
         <page name='GDC'/>
         <page name='Operations'/>
         <page name='Combine'/>
+        <page name='Async and await'/>
     </pages>
 </playground>
