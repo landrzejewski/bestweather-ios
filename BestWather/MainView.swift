@@ -24,6 +24,11 @@ struct MainView: View {
                     Image(systemName: "sun.max.fill")
                     Text("Forecast")
                 }
+            FoodListView(viewModel: Container.shared.foodListViewModel())
+                .tabItem {
+                    Image(systemName: "list.dash")
+                    Text("Food")
+                }
             ProfileView(viewModel: profileViewModel)
                 .tabItem {
                     Image(systemName: "person")

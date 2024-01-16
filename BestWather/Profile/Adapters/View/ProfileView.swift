@@ -35,8 +35,8 @@ struct ProfileView: View {
                 .onTapGesture { showImagePicker.toggle() }
                 Form {
                     Section(header: Text("Personal info")) {
-                        TextField("First name", text: $viewModel.firstName)
-                        TextField(LocalizedStringKey("Last name"), text: $viewModel.lastName)
+                        TextField("first-name", text: $viewModel.firstName)
+                        TextField(LocalizedStringKey("last-name"), text: $viewModel.lastName)
                         TextField("Email", text: $viewModel.email)
                             .keyboardType(.emailAddress)
                             .autocapitalization(.none)

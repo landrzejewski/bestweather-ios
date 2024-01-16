@@ -20,6 +20,40 @@
 		B25A82862B56A7D2003319E6 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25A82852B56A7D2003319E6 /* ProfileViewModel.swift */; };
 		B25A828A2B56C5F7003319E6 /* ForecastSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25A82892B56C5F7003319E6 /* ForecastSettingsView.swift */; };
 		B25A828C2B56CE85003319E6 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = B25A828B2B56CE85003319E6 /* data.json */; };
+		B25CDB0A2B56E5B600424E9A /* asparagus-steak.png in Resources */ = {isa = PBXBuildFile; fileRef = B25CDB042B56E5B600424E9A /* asparagus-steak.png */; };
+		B25CDB0B2B56E5B600424E9A /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = B25CDB052B56E5B600424E9A /* placeholder.png */; };
+		B25CDB0C2B56E5B600424E9A /* salmon-teriyaki-fish.png in Resources */ = {isa = PBXBuildFile; fileRef = B25CDB062B56E5B600424E9A /* salmon-teriyaki-fish.png */; };
+		B25CDB0D2B56E5B600424E9A /* big-burger.png in Resources */ = {isa = PBXBuildFile; fileRef = B25CDB072B56E5B600424E9A /* big-burger.png */; };
+		B25CDB0E2B56E5B600424E9A /* healthy-pizza.png in Resources */ = {isa = PBXBuildFile; fileRef = B25CDB082B56E5B600424E9A /* healthy-pizza.png */; };
+		B25CDB0F2B56E5B600424E9A /* food-data.json in Resources */ = {isa = PBXBuildFile; fileRef = B25CDB092B56E5B600424E9A /* food-data.json */; };
+		B25CDB1B2B56E5D900424E9A /* FoodDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25CDB132B56E5D900424E9A /* FoodDetailsView.swift */; };
+		B25CDB1C2B56E5D900424E9A /* FoodListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25CDB142B56E5D900424E9A /* FoodListViewModel.swift */; };
+		B25CDB1D2B56E5D900424E9A /* FoodViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25CDB152B56E5D900424E9A /* FoodViewModel.swift */; };
+		B25CDB1E2B56E5D900424E9A /* OrderEntryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25CDB162B56E5D900424E9A /* OrderEntryViewModel.swift */; };
+		B25CDB1F2B56E5D900424E9A /* FoodListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25CDB172B56E5D900424E9A /* FoodListView.swift */; };
+		B25CDB202B56E5D900424E9A /* FoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25CDB182B56E5D900424E9A /* FoodView.swift */; };
+		B25CDB212B56E5D900424E9A /* OrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25CDB192B56E5D900424E9A /* OrderViewModel.swift */; };
+		B25CDB222B56E5D900424E9A /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25CDB1A2B56E5D900424E9A /* OrderView.swift */; };
+		B25CDB2A2B56E78800424E9A /* MatchedGeometryEffectAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25CDB242B56E78800424E9A /* MatchedGeometryEffectAnimation.swift */; };
+		B25CDB2B2B56E78800424E9A /* BottomMenuAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25CDB252B56E78800424E9A /* BottomMenuAnimation.swift */; };
+		B25CDB2C2B56E78800424E9A /* BasicAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25CDB262B56E78800424E9A /* BasicAnimations.swift */; };
+		B25CDB2D2B56E78800424E9A /* ScrollAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25CDB272B56E78800424E9A /* ScrollAnimation.swift */; };
+		B25CDB2F2B56E78800424E9A /* SegmentedViewAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25CDB292B56E78800424E9A /* SegmentedViewAnimation.swift */; };
+		B25CDB312B56E79400424E9A /* Fruits.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25CDB302B56E79400424E9A /* Fruits.swift */; };
+		B25CDB332B56E7BC00424E9A /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25CDB322B56E7BC00424E9A /* Calculator.swift */; };
+		B25CDB352B56E7CB00424E9A /* Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25CDB342B56E7CB00424E9A /* Template.swift */; };
+		B25CDB3D2B56E82600424E9A /* BestWatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25CDB3C2B56E82600424E9A /* BestWatherTests.swift */; };
+		B25CDB4A2B56E83300424E9A /* BestWatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25CDB492B56E83300424E9A /* BestWatherUITests.swift */; };
+		B25CDB4C2B56E83300424E9A /* BestWatherUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25CDB4B2B56E83300424E9A /* BestWatherUITestsLaunchTests.swift */; };
+		B25CDB542B56E83E00424E9A /* CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25CDB522B56E83E00424E9A /* CalculatorTests.swift */; };
+		B25CDB552B56E83E00424E9A /* TemplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25CDB532B56E83E00424E9A /* TemplateTests.swift */; };
+		B25CDB5E2B56EA2A00424E9A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B25CDB602B56EA2A00424E9A /* InfoPlist.strings */; };
+		B25CDB612B56EA3100424E9A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B25CDB632B56EA3100424E9A /* Localizable.strings */; };
+		B25CDB662B56EAEA00424E9A /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = B25CDB652B56EAEA00424E9A /* SQLite */; };
+		B25CDB682B56EB0A00424E9A /* WeatherRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25CDB672B56EB0A00424E9A /* WeatherRepository.swift */; };
+		B25CDB6A2B56EB5F00424E9A /* WeatherRepositoryError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25CDB692B56EB5F00424E9A /* WeatherRepositoryError.swift */; };
+		B25CDB6E2B56EBA500424E9A /* SqlWeatherRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25CDB6C2B56EBA500424E9A /* SqlWeatherRepository.swift */; };
+		B25CDB6F2B56EBA500424E9A /* FakeWeatherRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25CDB6D2B56EBA500424E9A /* FakeWeatherRepository.swift */; };
 		B270FF852B553472003297AB /* BestWatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B270FF842B553472003297AB /* BestWatherApp.swift */; };
 		B270FF872B553472003297AB /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B270FF862B553472003297AB /* MainView.swift */; };
 		B270FF892B553473003297AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B270FF882B553473003297AB /* Assets.xcassets */; };
@@ -58,6 +92,23 @@
 		B270FFEC2B5588F7003297AB /* links.txt in Resources */ = {isa = PBXBuildFile; fileRef = B270FFEB2B5588F7003297AB /* links.txt */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		B25CDB3E2B56E82600424E9A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B270FF792B553472003297AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B270FF802B553472003297AB;
+			remoteInfo = BestWather;
+		};
+		B25CDB4D2B56E83300424E9A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B270FF792B553472003297AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B270FF802B553472003297AB;
+			remoteInfo = BestWather;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		B25A826E2B56A3F6003319E6 /* data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = data.txt; sourceTree = "<group>"; };
 		B25A82712B56A6F5003319E6 /* ImagePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
@@ -72,6 +123,41 @@
 		B25A82852B56A7D2003319E6 /* ProfileViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		B25A82892B56C5F7003319E6 /* ForecastSettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastSettingsView.swift; sourceTree = "<group>"; };
 		B25A828B2B56CE85003319E6 /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		B25CDB042B56E5B600424E9A /* asparagus-steak.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "asparagus-steak.png"; sourceTree = "<group>"; };
+		B25CDB052B56E5B600424E9A /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
+		B25CDB062B56E5B600424E9A /* salmon-teriyaki-fish.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "salmon-teriyaki-fish.png"; sourceTree = "<group>"; };
+		B25CDB072B56E5B600424E9A /* big-burger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "big-burger.png"; sourceTree = "<group>"; };
+		B25CDB082B56E5B600424E9A /* healthy-pizza.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "healthy-pizza.png"; sourceTree = "<group>"; };
+		B25CDB092B56E5B600424E9A /* food-data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "food-data.json"; sourceTree = "<group>"; };
+		B25CDB132B56E5D900424E9A /* FoodDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodDetailsView.swift; sourceTree = "<group>"; };
+		B25CDB142B56E5D900424E9A /* FoodListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodListViewModel.swift; sourceTree = "<group>"; };
+		B25CDB152B56E5D900424E9A /* FoodViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodViewModel.swift; sourceTree = "<group>"; };
+		B25CDB162B56E5D900424E9A /* OrderEntryViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderEntryViewModel.swift; sourceTree = "<group>"; };
+		B25CDB172B56E5D900424E9A /* FoodListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodListView.swift; sourceTree = "<group>"; };
+		B25CDB182B56E5D900424E9A /* FoodView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodView.swift; sourceTree = "<group>"; };
+		B25CDB192B56E5D900424E9A /* OrderViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderViewModel.swift; sourceTree = "<group>"; };
+		B25CDB1A2B56E5D900424E9A /* OrderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
+		B25CDB242B56E78800424E9A /* MatchedGeometryEffectAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchedGeometryEffectAnimation.swift; sourceTree = "<group>"; };
+		B25CDB252B56E78800424E9A /* BottomMenuAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomMenuAnimation.swift; sourceTree = "<group>"; };
+		B25CDB262B56E78800424E9A /* BasicAnimations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicAnimations.swift; sourceTree = "<group>"; };
+		B25CDB272B56E78800424E9A /* ScrollAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollAnimation.swift; sourceTree = "<group>"; };
+		B25CDB292B56E78800424E9A /* SegmentedViewAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentedViewAnimation.swift; sourceTree = "<group>"; };
+		B25CDB302B56E79400424E9A /* Fruits.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fruits.swift; sourceTree = "<group>"; };
+		B25CDB322B56E7BC00424E9A /* Calculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
+		B25CDB342B56E7CB00424E9A /* Template.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Template.swift; sourceTree = "<group>"; };
+		B25CDB3A2B56E82600424E9A /* BestWatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BestWatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B25CDB3C2B56E82600424E9A /* BestWatherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestWatherTests.swift; sourceTree = "<group>"; };
+		B25CDB472B56E83300424E9A /* BestWatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BestWatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B25CDB492B56E83300424E9A /* BestWatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestWatherUITests.swift; sourceTree = "<group>"; };
+		B25CDB4B2B56E83300424E9A /* BestWatherUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestWatherUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B25CDB522B56E83E00424E9A /* CalculatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorTests.swift; sourceTree = "<group>"; };
+		B25CDB532B56E83E00424E9A /* TemplateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemplateTests.swift; sourceTree = "<group>"; };
+		B25CDB5F2B56EA2A00424E9A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B25CDB622B56EA3100424E9A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B25CDB672B56EB0A00424E9A /* WeatherRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherRepository.swift; sourceTree = "<group>"; };
+		B25CDB692B56EB5F00424E9A /* WeatherRepositoryError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherRepositoryError.swift; sourceTree = "<group>"; };
+		B25CDB6C2B56EBA500424E9A /* SqlWeatherRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SqlWeatherRepository.swift; sourceTree = "<group>"; };
+		B25CDB6D2B56EBA500424E9A /* FakeWeatherRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeWeatherRepository.swift; sourceTree = "<group>"; };
 		B266BDCE2B5672900094A5AA /* Threads.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Threads.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		B270FF812B553472003297AB /* BestWather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BestWather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B270FF842B553472003297AB /* BestWatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestWatherApp.swift; sourceTree = "<group>"; };
@@ -112,10 +198,25 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B25CDB372B56E82600424E9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B25CDB442B56E83300424E9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B270FF7E2B553472003297AB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B25CDB662B56EAEA00424E9A /* SQLite in Frameworks */,
 				B270FFEA2B55844D003297AB /* Factory in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -136,6 +237,99 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		B25CDB022B56E5B600424E9A /* extras */ = {
+			isa = PBXGroup;
+			children = (
+				B25CDB032B56E5B600424E9A /* images */,
+				B25CDB092B56E5B600424E9A /* food-data.json */,
+			);
+			path = extras;
+			sourceTree = "<group>";
+		};
+		B25CDB032B56E5B600424E9A /* images */ = {
+			isa = PBXGroup;
+			children = (
+				B25CDB042B56E5B600424E9A /* asparagus-steak.png */,
+				B25CDB052B56E5B600424E9A /* placeholder.png */,
+				B25CDB062B56E5B600424E9A /* salmon-teriyaki-fish.png */,
+				B25CDB072B56E5B600424E9A /* big-burger.png */,
+				B25CDB082B56E5B600424E9A /* healthy-pizza.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		B25CDB102B56E5D900424E9A /* Food */ = {
+			isa = PBXGroup;
+			children = (
+				B25CDB112B56E5D900424E9A /* Adapters */,
+			);
+			path = Food;
+			sourceTree = "<group>";
+		};
+		B25CDB112B56E5D900424E9A /* Adapters */ = {
+			isa = PBXGroup;
+			children = (
+				B25CDB122B56E5D900424E9A /* View */,
+			);
+			path = Adapters;
+			sourceTree = "<group>";
+		};
+		B25CDB122B56E5D900424E9A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B25CDB132B56E5D900424E9A /* FoodDetailsView.swift */,
+				B25CDB142B56E5D900424E9A /* FoodListViewModel.swift */,
+				B25CDB152B56E5D900424E9A /* FoodViewModel.swift */,
+				B25CDB162B56E5D900424E9A /* OrderEntryViewModel.swift */,
+				B25CDB172B56E5D900424E9A /* FoodListView.swift */,
+				B25CDB182B56E5D900424E9A /* FoodView.swift */,
+				B25CDB192B56E5D900424E9A /* OrderViewModel.swift */,
+				B25CDB1A2B56E5D900424E9A /* OrderView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B25CDB232B56E78800424E9A /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				B25CDB262B56E78800424E9A /* BasicAnimations.swift */,
+				B25CDB302B56E79400424E9A /* Fruits.swift */,
+				B25CDB242B56E78800424E9A /* MatchedGeometryEffectAnimation.swift */,
+				B25CDB252B56E78800424E9A /* BottomMenuAnimation.swift */,
+				B25CDB272B56E78800424E9A /* ScrollAnimation.swift */,
+				B25CDB292B56E78800424E9A /* SegmentedViewAnimation.swift */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		B25CDB3B2B56E82600424E9A /* BestWatherTests */ = {
+			isa = PBXGroup;
+			children = (
+				B25CDB522B56E83E00424E9A /* CalculatorTests.swift */,
+				B25CDB532B56E83E00424E9A /* TemplateTests.swift */,
+				B25CDB3C2B56E82600424E9A /* BestWatherTests.swift */,
+			);
+			path = BestWatherTests;
+			sourceTree = "<group>";
+		};
+		B25CDB482B56E83300424E9A /* BestWatherUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B25CDB492B56E83300424E9A /* BestWatherUITests.swift */,
+				B25CDB4B2B56E83300424E9A /* BestWatherUITestsLaunchTests.swift */,
+			);
+			path = BestWatherUITests;
+			sourceTree = "<group>";
+		};
+		B25CDB6B2B56EB9300424E9A /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				B25CDB6D2B56EBA500424E9A /* FakeWeatherRepository.swift */,
+				B25CDB6C2B56EBA500424E9A /* SqlWeatherRepository.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
 		B270FF782B553472003297AB = {
 			isa = PBXGroup;
 			children = (
@@ -143,7 +337,10 @@
 				B270FFEB2B5588F7003297AB /* links.txt */,
 				B25A826E2B56A3F6003319E6 /* data.txt */,
 				B25A828B2B56CE85003319E6 /* data.json */,
+				B25CDB022B56E5B600424E9A /* extras */,
 				B270FF832B553472003297AB /* BestWather */,
+				B25CDB3B2B56E82600424E9A /* BestWatherTests */,
+				B25CDB482B56E83300424E9A /* BestWatherUITests */,
 				B270FF822B553472003297AB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -152,6 +349,8 @@
 			isa = PBXGroup;
 			children = (
 				B270FF812B553472003297AB /* BestWather.app */,
+				B25CDB3A2B56E82600424E9A /* BestWatherTests.xctest */,
+				B25CDB472B56E83300424E9A /* BestWatherUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -161,11 +360,14 @@
 			children = (
 				B270FFC02B554FF9003297AB /* Common */,
 				B270FF9C2B5538B0003297AB /* Profile */,
+				B25CDB102B56E5D900424E9A /* Food */,
 				B270FF922B5534C9003297AB /* Forecast */,
 				B270FF862B553472003297AB /* MainView.swift */,
 				B270FFA22B553A06003297AB /* Container+ext.swift */,
 				B270FF842B553472003297AB /* BestWatherApp.swift */,
 				B270FF882B553473003297AB /* Assets.xcassets */,
+				B25CDB602B56EA2A00424E9A /* InfoPlist.strings */,
+				B25CDB632B56EA3100424E9A /* Localizable.strings */,
 				B270FF8A2B553473003297AB /* Preview Content */,
 			);
 			path = BestWather;
@@ -234,6 +436,7 @@
 		B270FFC02B554FF9003297AB /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				B25CDB232B56E78800424E9A /* Animations */,
 				B25A82702B56A6EC003319E6 /* View */,
 				B270FFDB2B55777D003297AB /* Location */,
 				B270FFC42B555011003297AB /* Image+ext.swift */,
@@ -241,6 +444,8 @@
 				B25A827D2B56A746003319E6 /* Capitalized.swift */,
 				B25A827E2B56A746003319E6 /* UserProperty.swift */,
 				B25A82822B56A774003319E6 /* URLSession+ext.swift */,
+				B25CDB342B56E7CB00424E9A /* Template.swift */,
+				B25CDB322B56E7BC00424E9A /* Calculator.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -260,6 +465,7 @@
 			children = (
 				B270FFE52B55824C003297AB /* View */,
 				B270FFA42B553C32003297AB /* WeatherProvider */,
+				B25CDB6B2B56EB9300424E9A /* Persistence */,
 			);
 			path = Adapters;
 			sourceTree = "<group>";
@@ -301,6 +507,8 @@
 			isa = PBXGroup;
 			children = (
 				B270FFB82B554686003297AB /* WeatherProvider.swift */,
+				B25CDB672B56EB0A00424E9A /* WeatherRepository.swift */,
+				B25CDB692B56EB5F00424E9A /* WeatherRepositoryError.swift */,
 			);
 			path = Ports;
 			sourceTree = "<group>";
@@ -318,6 +526,42 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		B25CDB392B56E82600424E9A /* BestWatherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B25CDB402B56E82600424E9A /* Build configuration list for PBXNativeTarget "BestWatherTests" */;
+			buildPhases = (
+				B25CDB362B56E82600424E9A /* Sources */,
+				B25CDB372B56E82600424E9A /* Frameworks */,
+				B25CDB382B56E82600424E9A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B25CDB3F2B56E82600424E9A /* PBXTargetDependency */,
+			);
+			name = BestWatherTests;
+			productName = BestWatherTests;
+			productReference = B25CDB3A2B56E82600424E9A /* BestWatherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B25CDB462B56E83300424E9A /* BestWatherUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B25CDB4F2B56E83300424E9A /* Build configuration list for PBXNativeTarget "BestWatherUITests" */;
+			buildPhases = (
+				B25CDB432B56E83300424E9A /* Sources */,
+				B25CDB442B56E83300424E9A /* Frameworks */,
+				B25CDB452B56E83300424E9A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B25CDB4E2B56E83300424E9A /* PBXTargetDependency */,
+			);
+			name = BestWatherUITests;
+			productName = BestWatherUITests;
+			productReference = B25CDB472B56E83300424E9A /* BestWatherUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		B270FF802B553472003297AB /* BestWather */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B270FF8F2B553473003297AB /* Build configuration list for PBXNativeTarget "BestWather" */;
@@ -333,6 +577,7 @@
 			name = BestWather;
 			packageProductDependencies = (
 				B270FFE92B55844D003297AB /* Factory */,
+				B25CDB652B56EAEA00424E9A /* SQLite */,
 			);
 			productName = BestWather;
 			productReference = B270FF812B553472003297AB /* BestWather.app */;
@@ -348,6 +593,14 @@
 				LastSwiftUpdateCheck = 1520;
 				LastUpgradeCheck = 1520;
 				TargetAttributes = {
+					B25CDB392B56E82600424E9A = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = B270FF802B553472003297AB;
+					};
+					B25CDB462B56E83300424E9A = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = B270FF802B553472003297AB;
+					};
 					B270FF802B553472003297AB = {
 						CreatedOnToolsVersion = 15.2;
 					};
@@ -364,25 +617,50 @@
 			mainGroup = B270FF782B553472003297AB;
 			packageReferences = (
 				B270FFE82B55844D003297AB /* XCRemoteSwiftPackageReference "Factory" */,
+				B25CDB642B56EAEA00424E9A /* XCRemoteSwiftPackageReference "SQLite.swift" */,
 			);
 			productRefGroup = B270FF822B553472003297AB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				B270FF802B553472003297AB /* BestWather */,
+				B25CDB392B56E82600424E9A /* BestWatherTests */,
+				B25CDB462B56E83300424E9A /* BestWatherUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		B25CDB382B56E82600424E9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B25CDB452B56E83300424E9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B270FF7F2B553472003297AB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B25A826F2B56A3F6003319E6 /* data.txt in Resources */,
+				B25CDB612B56EA3100424E9A /* Localizable.strings in Resources */,
 				B270FF8C2B553473003297AB /* Preview Assets.xcassets in Resources */,
+				B25CDB5E2B56EA2A00424E9A /* InfoPlist.strings in Resources */,
+				B25CDB0F2B56E5B600424E9A /* food-data.json in Resources */,
 				B270FF892B553473003297AB /* Assets.xcassets in Resources */,
+				B25CDB0C2B56E5B600424E9A /* salmon-teriyaki-fish.png in Resources */,
+				B25CDB0E2B56E5B600424E9A /* healthy-pizza.png in Resources */,
 				B25A828C2B56CE85003319E6 /* data.json in Resources */,
+				B25CDB0B2B56E5B600424E9A /* placeholder.png in Resources */,
+				B25CDB0A2B56E5B600424E9A /* asparagus-steak.png in Resources */,
+				B25CDB0D2B56E5B600424E9A /* big-burger.png in Resources */,
 				B270FFEC2B5588F7003297AB /* links.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -390,21 +668,46 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B25CDB362B56E82600424E9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B25CDB552B56E83E00424E9A /* TemplateTests.swift in Sources */,
+				B25CDB3D2B56E82600424E9A /* BestWatherTests.swift in Sources */,
+				B25CDB542B56E83E00424E9A /* CalculatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B25CDB432B56E83300424E9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B25CDB4A2B56E83300424E9A /* BestWatherUITests.swift in Sources */,
+				B25CDB4C2B56E83300424E9A /* BestWatherUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B270FF7D2B553472003297AB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B270FFC82B555011003297AB /* Image+ext.swift in Sources */,
 				B270FFB42B5544CD003297AB /* Weather.swift in Sources */,
+				B25CDB2A2B56E78800424E9A /* MatchedGeometryEffectAnimation.swift in Sources */,
+				B25CDB1C2B56E5D900424E9A /* FoodListViewModel.swift in Sources */,
+				B25CDB222B56E5D900424E9A /* OrderView.swift in Sources */,
 				B270FFB02B553ED7003297AB /* OpenWeatherProvider.swift in Sources */,
 				B270FFA62B553C7D003297AB /* CityDto.swift in Sources */,
 				B270FFDA2B5575F9003297AB /* WeatherProviderLoggerProxy.swift in Sources */,
 				B25A827B2B56A730003319E6 /* LoadingView.swift in Sources */,
 				B270FFAE2B553E6D003297AB /* WeatherDto.swift in Sources */,
 				B25A827F2B56A746003319E6 /* Capitalized.swift in Sources */,
+				B25CDB2D2B56E78800424E9A /* ScrollAnimation.swift in Sources */,
 				B270FFBB2B5547CE003297AB /* FakeWeatherProvider.swift in Sources */,
 				B25A82802B56A746003319E6 /* UserProperty.swift in Sources */,
+				B25CDB312B56E79400424E9A /* Fruits.swift in Sources */,
 				B270FFD62B556820003297AB /* ForecastRouterView.swift in Sources */,
+				B25CDB1F2B56E5D900424E9A /* FoodListView.swift in Sources */,
 				B25A82742B56A6F5003319E6 /* ImagePickerCoordinator.swift in Sources */,
 				B270FFCC2B555055003297AB /* ForecastView.swift in Sources */,
 				B25A82842B56A774003319E6 /* URLSession+ext.swift in Sources */,
@@ -413,36 +716,152 @@
 				B270FFBD2B5548DA003297AB /* OpenWeatherProviderAdapter.swift in Sources */,
 				B270FFCB2B555055003297AB /* DayForecastView.swift in Sources */,
 				B270FFA32B553A06003297AB /* Container+ext.swift in Sources */,
+				B25CDB2F2B56E78800424E9A /* SegmentedViewAnimation.swift in Sources */,
 				B270FFB62B554553003297AB /* ForecastService.swift in Sources */,
+				B25CDB6E2B56EBA500424E9A /* SqlWeatherRepository.swift in Sources */,
 				B270FF992B5535E6003297AB /* ForecastRouter.swift in Sources */,
 				B270FFC62B555011003297AB /* Text+ext.swift in Sources */,
 				B270FFA82B553CB6003297AB /* TemperatureDto.swift in Sources */,
 				B270FFB22B554420003297AB /* DayForecast.swift in Sources */,
 				B270FFD22B556163003297AB /* DayForecastViewModelMapper.swift in Sources */,
+				B25CDB6A2B56EB5F00424E9A /* WeatherRepositoryError.swift in Sources */,
+				B25CDB2C2B56E78800424E9A /* BasicAnimations.swift in Sources */,
+				B25CDB1B2B56E5D900424E9A /* FoodDetailsView.swift in Sources */,
 				B270FFAC2B553D54003297AB /* ForecastDto.swift in Sources */,
 				B25A82762B56A70A003319E6 /* View+ext.swift in Sources */,
+				B25CDB332B56E7BC00424E9A /* Calculator.swift in Sources */,
+				B25CDB202B56E5D900424E9A /* FoodView.swift in Sources */,
+				B25CDB1E2B56E5D900424E9A /* OrderEntryViewModel.swift in Sources */,
 				B25A82862B56A7D2003319E6 /* ProfileViewModel.swift in Sources */,
 				B270FFDF2B55784A003297AB /* FakeLocationService.swift in Sources */,
 				B25A828A2B56C5F7003319E6 /* ForecastSettingsView.swift in Sources */,
 				B270FF972B55357E003297AB /* ForecastRoute.swift in Sources */,
+				B25CDB682B56EB0A00424E9A /* WeatherRepository.swift in Sources */,
 				B270FFB92B554686003297AB /* WeatherProvider.swift in Sources */,
+				B25CDB212B56E5D900424E9A /* OrderViewModel.swift in Sources */,
+				B25CDB352B56E7CB00424E9A /* Template.swift in Sources */,
 				B25A827A2B56A730003319E6 /* PlaceholderView.swift in Sources */,
 				B270FFA12B553971003297AB /* ForecastViewModel.swift in Sources */,
 				B25A82732B56A6F5003319E6 /* ImagePickerView.swift in Sources */,
 				B270FF872B553472003297AB /* MainView.swift in Sources */,
+				B25CDB1D2B56E5D900424E9A /* FoodViewModel.swift in Sources */,
 				B25A827C2B56A730003319E6 /* ActivityIndicatorView.swift in Sources */,
 				B270FFCE2B5550AB003297AB /* DayForecastViewModel.swift in Sources */,
 				B270FFD82B556E66003297AB /* CoreLocationService.swift in Sources */,
 				B270FF9F2B5538D4003297AB /* ProfileView.swift in Sources */,
 				B270FFBF2B55495C003297AB /* OpenWeatherProviderMapper.swift in Sources */,
 				B270FF852B553472003297AB /* BestWatherApp.swift in Sources */,
+				B25CDB6F2B56EBA500424E9A /* FakeWeatherRepository.swift in Sources */,
 				B270FFDD2B5577B6003297AB /* LocationService.swift in Sources */,
+				B25CDB2B2B56E78800424E9A /* BottomMenuAnimation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		B25CDB3F2B56E82600424E9A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B270FF802B553472003297AB /* BestWather */;
+			targetProxy = B25CDB3E2B56E82600424E9A /* PBXContainerItemProxy */;
+		};
+		B25CDB4E2B56E83300424E9A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B270FF802B553472003297AB /* BestWather */;
+			targetProxy = B25CDB4D2B56E83300424E9A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B25CDB602B56EA2A00424E9A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B25CDB5F2B56EA2A00424E9A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B25CDB632B56EA3100424E9A /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B25CDB622B56EA3100424E9A /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		B25CDB412B56E82600424E9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 34A9J24W7Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pl.training.BestWatherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BestWather.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BestWather";
+			};
+			name = Debug;
+		};
+		B25CDB422B56E82600424E9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 34A9J24W7Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pl.training.BestWatherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BestWather.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BestWather";
+			};
+			name = Release;
+		};
+		B25CDB502B56E83300424E9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 34A9J24W7Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pl.training.BestWatherUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BestWather;
+			};
+			name = Debug;
+		};
+		B25CDB512B56E83300424E9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 34A9J24W7Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pl.training.BestWatherUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BestWather;
+			};
+			name = Release;
+		};
 		B270FF8D2B553473003297AB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -625,6 +1044,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B25CDB402B56E82600424E9A /* Build configuration list for PBXNativeTarget "BestWatherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B25CDB412B56E82600424E9A /* Debug */,
+				B25CDB422B56E82600424E9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B25CDB4F2B56E83300424E9A /* Build configuration list for PBXNativeTarget "BestWatherUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B25CDB502B56E83300424E9A /* Debug */,
+				B25CDB512B56E83300424E9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B270FF7C2B553472003297AB /* Build configuration list for PBXProject "BestWather" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -646,6 +1083,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		B25CDB642B56EAEA00424E9A /* XCRemoteSwiftPackageReference "SQLite.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stephencelis/SQLite.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.14.1;
+			};
+		};
 		B270FFE82B55844D003297AB /* XCRemoteSwiftPackageReference "Factory" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/hmlongco/Factory";
@@ -657,6 +1102,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		B25CDB652B56EAEA00424E9A /* SQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B25CDB642B56EAEA00424E9A /* XCRemoteSwiftPackageReference "SQLite.swift" */;
+			productName = SQLite;
+		};
 		B270FFE92B55844D003297AB /* Factory */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = B270FFE82B55844D003297AB /* XCRemoteSwiftPackageReference "Factory" */;
