@@ -6,8 +6,11 @@
 //
 
 import SwiftUI
+import Factory
 
 struct MainView: View {
+    
+    @Injected(\.profileViewModel) var profileViewModel
     
     init() {
         UITabBar.appearance().unselectedItemTintColor = .lightGray
@@ -21,7 +24,7 @@ struct MainView: View {
                     Image(systemName: "sun.max.fill")
                     Text("Forecast")
                 }
-            ProfileView()
+            ProfileView(viewModel: profileViewModel)
                 .tabItem {
                     Image(systemName: "person")
                     Text("Profile")

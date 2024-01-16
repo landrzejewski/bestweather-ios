@@ -164,7 +164,7 @@ class Search: ObservableObject {
         //        $searchText
         //            .debounce(for: 0.3, scheduler: DispatchQueue.main)
         //            .flatMap { query in
-        //                let url = URL(string: "https://raw.githubusercontent.com/landrzejewski/bestweather-ios/main/links.txt?q=\(query)")!
+        //                let url = URL(string: "https://raw.githubusercontent.com/landrzejewski/bestweather-ios/main/data.txt?q=\(query)")!
         //                return URLSession.shared.dataTaskPublisher(for: url)
         //                    .map(\.data)
         //                    .decode(type: [String].self, decoder: JSONDecoder())
@@ -197,7 +197,7 @@ class Search: ObservableObject {
     }
     
     func search(for query: String) async throws -> [String] {
-        let url = URL(string: "https://raw.githubusercontent.com/landrzejewski/bestweather-ios/main/links.txt?q=\(query)")!
+        let url = URL(string: "https://raw.githubusercontent.com/landrzejewski/bestweather-ios/main/data.txt?q=\(query)")!
         let (data, _) = try await URLSession.shared.data(from: url)
         return try JSONDecoder()
             .decode([String].self, from: data)
@@ -205,9 +205,17 @@ class Search: ObservableObject {
     
 }
 
-let result = try? await Search().search(for: "abc")
-result?.forEach {
+let result = Search().$results
+result.sink {
     print($0)
+}
+.store(in: &subscriptionSet)
+
+Task {
+    let results = try? await Search().search(for: "abc")
+    results?.forEach {
+        print($0)
+    }
 }
 
 PlaygroundPage.current.needsIndefiniteExecution = true

@@ -39,4 +39,8 @@ extension Container {
         return self { ForecastViewModel(forecastService: forecastService, locationService: self.locationService()) }.singleton
     }
     
+    var profileViewModel: Factory<ProfileViewModel> {
+        self { ProfileViewModel() }.singleton
+    }
+    
 }
