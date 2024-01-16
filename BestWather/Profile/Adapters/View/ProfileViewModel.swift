@@ -6,29 +6,19 @@
 //
 
 import Foundation
-import Combine
 
-final class ProfileViewModel: ObservableObject {
+@Observable
+final class ProfileViewModel {
     
-    @Published
     var firstName = ""
-    @Published
     var lastName = ""
-    @Published
     var dateOfBirth = Date()
-    @Published
     var email = ""
-    @Published
     var password = ""
-    @Published
     var isSubscriber = false
-    @Published
     var cardNumber = ""
-    @Published
     var cardCvv = ""
-    @Published
     var cardExpirationDate = Date()
-    @Published
     var errors: [String] = []
-        
+
 }

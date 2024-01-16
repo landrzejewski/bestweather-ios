@@ -218,4 +218,26 @@ Task {
     }
 }
 
+func emailIsValid(_ email: AnyPublisher<String, Never>) -> AnyPublisher<String, Never> {
+    email
+        .map { $0.contains("@") && $0.contains(".") }
+        .map { $0 ? "" : "Invalid email" }
+        .eraseToAnyPublisher()
+}
+
+func passwordIsValid(_ password: AnyPublisher<String, Never>) -> AnyPublisher<String, Never> {
+    password
+        .map { $0.count > 6 }
+        .map { $0 ? "" : "Password is too short" }
+        .eraseToAnyPublisher()
+}
+
+Publishers.CombineLatest(emailIsValid(Just("abc@training.pl").eraseToAnyPublisher()), passwordIsValid(Just("123").eraseToAnyPublisher()))
+    .dropFirst()
+    .map { [$0, $1] }
+    .map { errors in errors.filter { !$0.isEmpty } }
+    .sink {
+        print($0)
+    }
+
 PlaygroundPage.current.needsIndefiniteExecution = true
