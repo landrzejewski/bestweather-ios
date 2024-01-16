@@ -205,9 +205,8 @@ class Search: ObservableObject {
     
 }
 
-let search = Search()
-let result = try await search.search(for: "abc")
-result.forEach {
+let result = try? await Search().search(for: "abc")
+result?.forEach {
     print($0)
 }
 

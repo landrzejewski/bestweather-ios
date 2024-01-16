@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B25A826F2B56A3F6003319E6 /* data.txt in Resources */ = {isa = PBXBuildFile; fileRef = B25A826E2B56A3F6003319E6 /* data.txt */; };
 		B270FF852B553472003297AB /* BestWatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B270FF842B553472003297AB /* BestWatherApp.swift */; };
 		B270FF872B553472003297AB /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B270FF862B553472003297AB /* MainView.swift */; };
 		B270FF892B553473003297AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B270FF882B553473003297AB /* Assets.xcassets */; };
@@ -46,6 +47,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B25A826E2B56A3F6003319E6 /* data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = data.txt; sourceTree = "<group>"; };
 		B266BDCE2B5672900094A5AA /* Threads.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Threads.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		B270FF812B553472003297AB /* BestWather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BestWather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B270FF842B553472003297AB /* BestWatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestWatherApp.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 			children = (
 				B266BDCE2B5672900094A5AA /* Threads.playground */,
 				B270FFEB2B5588F7003297AB /* links.txt */,
+				B25A826E2B56A3F6003319E6 /* data.txt */,
 				B270FF832B553472003297AB /* BestWather */,
 				B270FF822B553472003297AB /* Products */,
 			);
@@ -332,6 +335,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B25A826F2B56A3F6003319E6 /* data.txt in Resources */,
 				B270FF8C2B553473003297AB /* Preview Assets.xcassets in Resources */,
 				B270FF892B553473003297AB /* Assets.xcassets in Resources */,
 				B270FFEC2B5588F7003297AB /* links.txt in Resources */,
