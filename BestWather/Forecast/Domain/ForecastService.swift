@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Combine
 
 final class ForecastService {
     
@@ -15,13 +16,13 @@ final class ForecastService {
         self.weatherProvider = weatherProvider
     }
     
-    func getWeather(for city: String) async -> Weather? {
-        await weatherProvider.getWeather(for: city)
+    func getWeather(for city: String) -> AnyPublisher<Weather, WeatherProviderError> {
+        weatherProvider.getWeather(for: city)
         // dodatkowa logika np. filtrowanie
     }
     
-    func getWeather(for location: (Double, Double)) async -> Weather? {
-        await weatherProvider.getWeather(for: location)
+    func getWeather(for location: (Double, Double)) -> AnyPublisher<Weather, WeatherProviderError> {
+        weatherProvider.getWeather(for: location)
     }
     
 }

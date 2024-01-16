@@ -20,6 +20,7 @@ final class ForecastViewModel {
     var city = ""
     var currentForecast: DayForecastViewModel?
     var nextDaysForecast: [DayForecastViewModel] = []
+    var error = false
     
     init(forecastService: ForecastService, locationService: LocationService, mapper: DayForecastViewModelMapper = DayForecastViewModelMapper()) {
         self.forecastService = forecastService
@@ -33,15 +34,22 @@ final class ForecastViewModel {
     }
     
     private func onNewCoordinates(coordinates: (Double, Double)) {
-        Task {
-            guard let weather = await forecastService.getWeather(for: coordinates) else {
-                return
+        forecastService.getWeather(for: coordinates)
+            .receive(on: DispatchQueue.main)
+            .sink { [unowned self] completion in
+                switch completion {
+                case .finished:
+                    self.error = false
+                case .failure(_):
+                    self.error = true
+                }
+            } receiveValue: { [unowned self] weather in
+                let forecast = self.mapper.map(forecast: weather.forecast)
+                self.city = weather.city
+                self.currentForecast = forecast.first
+                self.nextDaysForecast = Array(forecast.dropFirst())
             }
-            let forecast = mapper.map(forecast: weather.forecast)
-            self.city = weather.city
-            self.currentForecast = forecast.first
-            self.nextDaysForecast = Array(forecast.dropFirst())
-        }
+            .store(in: &subscriptions)
     }
 
 }

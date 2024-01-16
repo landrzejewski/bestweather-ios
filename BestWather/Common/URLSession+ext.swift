@@ -40,7 +40,7 @@ extension URLSession {
         do {
             request.httpBody = try encoder.encode(payload)
         } catch {
-            return Fail(error: RequestError.encodingFailed)
+            return Fail(error: .encodingFailed)
                 .eraseToAnyPublisher()
         }
         return send(request)
@@ -74,7 +74,7 @@ extension URLSession {
             .mapError { _ in .decodingFailed }
             .eraseToAnyPublisher()
     }
-    
+
     private func send(_ request: URLRequest) -> AnyPublisher<Data, RequestError> {
         return dataTaskPublisher(for: request)
             .mapError { .requestFailed($0.errorCode, $0.localizedDescription) }

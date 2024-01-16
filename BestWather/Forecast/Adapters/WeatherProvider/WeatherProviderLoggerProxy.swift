@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Combine
 
 final class WeatherProviderLoggerProxy: WeatherProvider {
    
@@ -15,14 +16,14 @@ final class WeatherProviderLoggerProxy: WeatherProvider {
         self.provider = provider
     }
     
-    func getWeather(for city: String) async -> Weather? {
+    func getWeather(for city: String) -> AnyPublisher<Weather, WeatherProviderError> {
         print("Fetching weather for city \(city)")
-        return await provider.getWeather(for: city)
+        return provider.getWeather(for: city)
     }
     
-    func getWeather(for location: (Double, Double)) async -> Weather? {
+    func getWeather(for location: (Double, Double)) -> AnyPublisher<Weather, WeatherProviderError> {
         print("Fetching weather for location \(location)")
-        return await provider.getWeather(for: location)
+        return provider.getWeather(for: location)
     }
     
 }

@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Combine
 
 final class OpenWeatherProviderAdapter: WeatherProvider {
     
@@ -17,18 +18,18 @@ final class OpenWeatherProviderAdapter: WeatherProvider {
         self.mapper = mapper
     }
 
-    func getWeather(for city: String) async -> Weather? {
-        guard let weatherDto = await provider.getWeather(for: city) else {
-            return nil
-        }
-        return mapper.toDomain(weatherDto)
+    func getWeather(for city: String) -> AnyPublisher<Weather, WeatherProviderError> {
+        map(provider.getWeather(for: city))
     }
     
-    func getWeather(for location: (Double, Double)) async -> Weather? {
-        guard let weatherDto = await provider.getWeather(for: location) else {
-            return nil
-        }
-        return mapper.toDomain(weatherDto)
+    func getWeather(for location: (Double, Double)) -> AnyPublisher<Weather, WeatherProviderError> {
+        map(provider.getWeather(for: location))
+    }
+    
+    private func map(_ weatherPublisher: AnyPublisher<WeatherDto, RequestError>) -> AnyPublisher<Weather, WeatherProviderError> {
+        weatherPublisher.mapError { _ in WeatherProviderError.forecastRefreshFailed }
+            .map { self.mapper.toDomain($0) }
+            .eraseToAnyPublisher()
     }
     
 }

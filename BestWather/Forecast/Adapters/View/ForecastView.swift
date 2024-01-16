@@ -50,6 +50,15 @@ struct ForecastView: View {
                         .padding(.bottom, 16)
                     }
                 }
+                if viewModel.error {
+                    VStack {
+                        Spacer()
+                        Text("Refresh forecast failed")
+                            .foregroundColor(Color.white)
+                            .frame(width: UIScreen.main.bounds.width)
+                            .padding(.bottom, 32)
+                    }
+                }
             }
         }
     }
