@@ -21,6 +21,10 @@ final class ForecastViewModel {
     var currentForecast: DayForecastViewModel?
     var nextDaysForecast: [DayForecastViewModel] = []
     
+    @ObservationIgnored
+    @UserProperty(key: "city", defaultValue: "")
+    private var storedCity
+    
     init(forecastService: ForecastService, locationService: LocationService, mapper: DayForecastViewModelMapper = DayForecastViewModelMapper()) {
         self.forecastService = forecastService
         self.locationService = locationService
@@ -29,7 +33,17 @@ final class ForecastViewModel {
             .debounce(for: .milliseconds(500), scheduler: DispatchQueue.main)
             .sink(receiveValue: onNewCoordinates(coordinates:))
             .store(in: &subscriptions)
-        locationService.refreshLocation()
+        
+        if !storedCity.isEmpty {
+            Task {
+                guard let weather = await forecastService.getWeather(for: city) else {
+                    return
+                }
+                await onWeatherRefreshed(weather: weather)
+            }
+        } else {
+            locationService.refreshLocation()
+        }
     }
     
     private func onNewCoordinates(coordinates: (Double, Double)) {
@@ -37,11 +51,16 @@ final class ForecastViewModel {
             guard let weather = await forecastService.getWeather(for: coordinates) else {
                 return
             }
-            let forecast = mapper.map(forecast: weather.forecast)
-            self.city = weather.city
-            self.currentForecast = forecast.first
-            self.nextDaysForecast = Array(forecast.dropFirst())
+            await onWeatherRefreshed(weather: weather)
         }
+    }
+    
+    @MainActor
+    private func onWeatherRefreshed(weather: Weather) {
+        let forecast = mapper.map(forecast: weather.forecast)
+        self.city = weather.city
+        self.currentForecast = forecast.first
+        self.nextDaysForecast = Array(forecast.dropFirst())
     }
 
 }
