@@ -14,6 +14,7 @@ struct ForecastView: View {
     @Environment(ForecastRouter.self) private var router
     @Environment(\.scenePhase) private var scenePhase
     @State private var showSettings = false
+    @AppStorage("city") private var storedCity = ""
     
     var body: some View {
         ZStack {
@@ -67,11 +68,15 @@ struct ForecastView: View {
             }
         }
         .sheet(isPresented: $showSettings) { ForecastSettingsView() }
-        .onChange(of: scenePhase) { oldValue, newValue in
-            if newValue == .active {
-                viewModel.refreshForecast()
-            }
+        .onAppear { viewModel.refreshForecast(for: storedCity) }
+        .onChange(of: storedCity) { _, newValue in
+            viewModel.refreshForecast(for: storedCity)
         }
+//        .onChange(of: scenePhase) { oldValue, newValue in
+//            if newValue == .active {
+//                viewModel.onActive()
+//            }
+//        }
     }
 }
 

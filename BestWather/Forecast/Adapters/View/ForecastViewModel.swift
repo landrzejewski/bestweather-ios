@@ -21,25 +21,26 @@ final class ForecastViewModel {
     var currentForecast: DayForecastViewModel?
     var nextDaysForecast: [DayForecastViewModel] = []
     
-    @ObservationIgnored
-    @UserProperty(key: "city", defaultValue: "")
-    private var storedCity
+//    @ObservationIgnored
+//    @UserProperty(key: "city", defaultValue: "")
+//    private var storedCity
     
     init(forecastService: ForecastService, locationService: LocationService, mapper: DayForecastViewModelMapper = DayForecastViewModelMapper()) {
         self.forecastService = forecastService
         self.locationService = locationService
         self.mapper = mapper
         locationService.location
+            .dropFirst()
             .debounce(for: .milliseconds(500), scheduler: DispatchQueue.main)
             .sink(receiveValue: onNewCoordinates(coordinates:))
             .store(in: &subscriptions)
     }
     
-    func refreshForecast() {
-        if !storedCity.isEmpty {
-            refreshForecast(for: city)
-        }
-    }
+//    func onActive() {
+//        if !storedCity.isEmpty {
+//            refreshForecast(for: storedCity)
+//        }
+//    }
     
     func refreshForecast(for city: String) {
         Task {
