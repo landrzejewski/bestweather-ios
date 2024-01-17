@@ -17,7 +17,7 @@ struct MainView: View {
     }
     
     var body: some View {
-        SegmentedViewAnimation()
+        Fruits()
 //        TabView {
 //            ForecastRouterView()
 //                .environment(ForecastRouter())

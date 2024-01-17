@@ -9,10 +9,8 @@ import SwiftUI
 
 struct Fruits: View {
     
-    @Namespace
-    var namespace
-    @State
-    private var selectedItem: Item?
+    @Namespace var namespace
+    @State private var selectedItem: Item?
     private var items = FruitsData.getFruits()
     
     var body: some View {

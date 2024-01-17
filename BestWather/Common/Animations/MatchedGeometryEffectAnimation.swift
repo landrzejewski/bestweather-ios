@@ -10,10 +10,8 @@ import SwiftUI
 // https://swiftui-lab.com/matchedgeometryeffect-part1/
 struct MatchedGeometryEffectAnimation: View {
     
-    @State
-    var change = false
-    @Namespace
-    var namespace
+    @State var change = false
+    @Namespace var namespace
     
     var body: some View {
         VStack(spacing: 20) {
