@@ -5,14 +5,14 @@
       "name": "Asparagus steak",
       "description": "Nice and healthy steak.",
       "price": 120.5,
-      "imageUrl": "https://github.com/landrzejewski/goodweather/blob/combine/extras/images/asparagus-steak.png?raw=true"
+      "imageUrl": "https://github.com/landrzejewski/bestweather-ios/tree/main/extras/images/asparagus-steak.png?raw=true"
     },
     {
       "id": 2,
       "name": "Healthy pizza",
       "description": "Mega pizza.",
       "price": 90,
-      "imageUrl": "https://github.com/landrzejewski/goodweather/blob/combine/extras/images/healthy-pizza.png?raw=true"
+      "imageUrl": "https://github.com/landrzejewski/bestweather-ios/tree/main/extras/images/healthy-pizza.png?raw=true"
     }
   ],
   "restaurants": [
@@ -21,7 +21,7 @@
       "name": "BigMenu",
       "prices": "Best",
       "rating": 5,
-      "imageUrl": "https://github.com/landrzejewski/goodweather/blob/combine/extras/images/healthy-pizza.png?raw=true"
+      "imageUrl": "https://github.com/landrzejewski/bestweather-ios/tree/main/extras/images/healthy-pizza.png?raw=true"
     }
   ],
   "auth": {
