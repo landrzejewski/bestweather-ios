@@ -22,16 +22,15 @@ struct Fruits: View {
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 50, height: 36)
+                            .matchedGeometryEffect(id: item.id, in: namespace)
                     } else {
-                        Color.clear
-                            .frame(width: 50, height: 36)
+                        Color.clear.frame(width: 50, height: 36)
                     }
                     Text(item.name)
                         .font(.title)
                     Spacer()
                 }
                 .padding()
-                .matchedGeometryEffect(id: item.id, in: namespace)
                 .onTapGesture {
                     withAnimation(.spring(response: 0.35, dampingFraction: 0.6)) {
                         selectedItem = item
@@ -48,7 +47,8 @@ struct Fruits: View {
                     Image(selectedItem.imageName)
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .frame(width: 300)
+                        .frame(width: 50, height: 36)
+                        //.scaleEffect(2)
                         .matchedGeometryEffect(id: selectedItem.id, in: namespace)
                     Button(action: {
                         withAnimation(.easeInOut(duration: 0.6)) {
@@ -61,7 +61,7 @@ struct Fruits: View {
                             .background(Capsule().fill(.white))
                     }
                 }
-                .padding()
+                .padding(32)
                 .background(RoundedRectangle(cornerRadius: 25)
                     .fill(Color.green)
                     .shadow(radius: 10)
