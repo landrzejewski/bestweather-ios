@@ -17,25 +17,24 @@ struct MainView: View {
     }
     
     var body: some View {
-        Fruits()
-//        TabView {
-//            ForecastRouterView()
-//                .environment(ForecastRouter())
-//                .tabItem {
-//                    Image(systemName: "sun.max.fill")
-//                    Text("Forecast")
-//                }
-//            FoodListView(viewModel: Container.shared.foodListViewModel())
-//                .tabItem {
-//                    Image(systemName: "list.dash")
-//                    Text("Food")
-//                }
-//            ProfileView(viewModel: profileViewModel)
-//                .tabItem {
-//                    Image(systemName: "person")
-//                    Text("Profile")
-//                }
-//        }
+        TabView {
+            ForecastRouterView()
+                .environment(ForecastRouter())
+                .tabItem {
+                    Image(systemName: "sun.max.fill")
+                    Text("Forecast")
+                }
+            FoodListView(viewModel: Container.shared.foodListViewModel())
+                .tabItem {
+                    Image(systemName: "list.dash")
+                    Text("Food")
+                }
+            ProfileView(viewModel: profileViewModel)
+                .tabItem {
+                    Image(systemName: "person")
+                    Text("Profile")
+                }
+        }
     }
     
 }

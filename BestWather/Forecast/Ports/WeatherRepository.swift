@@ -13,6 +13,6 @@ protocol WeatherRepository {
     
     func deleteAll() throws
     
-    func get(by city: String, callback: @escaping (Result<Weather, WeatherRepositoryError>) -> ()) throws
+    func get(by city: String, callback: @escaping (Result<Weather, WeatherRepositoryError>) -> ())
     
 }

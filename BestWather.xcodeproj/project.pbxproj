@@ -277,8 +277,8 @@
 		B25CDB122B56E5D900424E9A /* View */ = {
 			isa = PBXGroup;
 			children = (
-				B25CDB132B56E5D900424E9A /* FoodDetailsView.swift */,
 				B25CDB152B56E5D900424E9A /* FoodViewModel.swift */,
+				B25CDB132B56E5D900424E9A /* FoodDetailsView.swift */,
 				B25CDB162B56E5D900424E9A /* OrderEntryViewModel.swift */,
 				B25CDB172B56E5D900424E9A /* FoodListView.swift */,
 				B25CDB182B56E5D900424E9A /* FoodView.swift */,

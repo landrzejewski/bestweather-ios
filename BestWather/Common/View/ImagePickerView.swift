@@ -13,10 +13,8 @@ struct ImagePickerView: UIViewControllerRepresentable {
     
     typealias Coordinator = ImagePickerCoordinator
     
-    @Environment(\.presentationMode)
-    var isPresented
-    @Binding
-    var selectedImage: UIImage?
+    @Environment(\.presentationMode) var isPresented
+    @Binding var selectedImage: UIImage?
     var source: UIImagePickerController.SourceType
     
     func makeUIViewController(context: Context) -> some UIViewController {

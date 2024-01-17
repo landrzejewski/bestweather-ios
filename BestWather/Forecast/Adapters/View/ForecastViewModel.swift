@@ -55,6 +55,15 @@ final class ForecastViewModel {
         locationService.refreshLocation()
     }
     
+    func getLastForecast(for city: String) {
+        Task {
+            guard let weather = await forecastService.getLastWeather(for: city) else {
+                return
+            }
+            await onWeatherRefreshed(weather: weather)
+        }
+    }
+    
     private func onNewCoordinates(coordinates: (Double, Double)) {
         Task {
             guard let weather = await forecastService.getWeather(for: coordinates) else {

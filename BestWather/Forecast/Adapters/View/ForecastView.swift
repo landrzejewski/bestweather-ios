@@ -68,7 +68,7 @@ struct ForecastView: View {
             }
         }
         .sheet(isPresented: $showSettings) { ForecastSettingsView() }
-        .onAppear { viewModel.refreshForecast(for: storedCity) }
+        .onAppear { viewModel.getLastForecast(for: storedCity) }
         .onChange(of: storedCity) { _, newValue in
             viewModel.refreshForecast(for: storedCity)
         }

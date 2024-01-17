@@ -25,9 +25,13 @@ extension Container {
         self { OpenWeatherProviderAdapter(provider: self.openWeatherProvider()) }.singleton
     }
     
+    var weatherRepository: Factory<WeatherRepository> {
+        self { try! SqlWeatherRepository() }.singleton
+    }
+    
     var forecastService: Factory<ForecastService> {
         let proxy = WeatherProviderLoggerProxy(provider: self.openWeatherProviderAdapter())
-        return self { ForecastService(weatherProvider: proxy) }.singleton
+        return self { ForecastService(weatherProvider: proxy, weatherRepository: self.weatherRepository()) }.singleton
     }
     
     var forecastViewModel: Factory<ForecastViewModel> {
@@ -35,7 +39,7 @@ extension Container {
     }
     
     var fakeForecastViewModel: Factory<ForecastViewModel> {
-        let forecastService = ForecastService(weatherProvider: self.fakeWeatherProvider())
+        let forecastService = ForecastService(weatherProvider: self.fakeWeatherProvider(), weatherRepository: FakeWeatherRepository())
         return self { ForecastViewModel(forecastService: forecastService, locationService: self.locationService()) }.singleton
     }
     
