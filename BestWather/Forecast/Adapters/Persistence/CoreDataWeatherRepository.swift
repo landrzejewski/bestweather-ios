@@ -17,26 +17,27 @@ final class CoreDataWeatherRepository: WeatherRepository {
     }
    
     func save(weather: Weather) throws {
+        let context = persistence.context()
         for forecast in weather.forecast {
-            let forecastEntity = NSEntityDescription.insertNewObject(forEntityName: "ForecastEntity", into: persistence.context()) as! ForecastEntity
+            let forecastEntity = ForecastEntity(context: context)
             forecastEntity.date = forecast.date
             forecastEntity.conditions = forecast.description
             forecastEntity.temperature = forecast.temperature
             forecastEntity.pressure = forecast.pressure
             forecastEntity.icon = forecast.icon
             forecastEntity.city = weather.city
-            try persistence.context().save()
+            try context.save()
         }
     }
     
     func deleteAll() throws {
+        let context = persistence.context()
         let fetchRequest = ForecastEntity.fetchRequest()
         fetchRequest.includesPropertyValues = false // get only ids
-        let entities = try persistence.context().fetch(fetchRequest)
-        for entity in entities {
-            persistence.context().delete(entity)
+        try context.fetch(fetchRequest).forEach { entity in
+            context.delete(entity)
         }
-        try persistence.context().save()
+        try context.save()
     }
     
     func get(by city: String, callback: @escaping (Result<Weather, WeatherRepositoryError>) -> ()) {
