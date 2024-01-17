@@ -57,7 +57,8 @@ final class SqlWeatherRepository: WeatherRepository {
     }
     
     func get(by city: String, callback: @escaping (Swift.Result<Weather, WeatherRepositoryError>) -> ()) {
-        guard let rows = try? db.prepare(table.filter(city == self.city)), rows.underestimatedCount != 0 else {
+        let filter = table.filter(city == self.city)
+        guard let rows = try? db.prepare(filter) §else {
             callback(.failure(.operationFailed))
             return
         }

@@ -35,7 +35,7 @@ final class ForecastService {
     
     private func saveWeather(weather: Weather) {
         do {
-            //try weatherRepository.deleteAll()
+            try weatherRepository.deleteAll()
             try weatherRepository.save(weather: weather)
         } catch {
             print(error)
