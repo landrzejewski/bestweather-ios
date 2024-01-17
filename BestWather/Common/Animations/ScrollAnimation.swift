@@ -12,7 +12,7 @@ struct ScrollAnimation: View {
         ScrollView {
             ZStack {
                 GeometryReader { reader in
-                    Image("Background")
+                    Image("Placeholder")
                         .resizable()
                         .aspectRatio(contentMode: .fill)
                         .offset(y: -reader.frame(in: .global).origin.y / 2)
