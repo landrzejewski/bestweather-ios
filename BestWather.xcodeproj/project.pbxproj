@@ -278,7 +278,6 @@
 			isa = PBXGroup;
 			children = (
 				B25CDB132B56E5D900424E9A /* FoodDetailsView.swift */,
-				B25CDB142B56E5D900424E9A /* FoodListViewModel.swift */,
 				B25CDB152B56E5D900424E9A /* FoodViewModel.swift */,
 				B25CDB162B56E5D900424E9A /* OrderEntryViewModel.swift */,
 				B25CDB172B56E5D900424E9A /* FoodListView.swift */,
@@ -444,6 +443,7 @@
 				B25A827D2B56A746003319E6 /* Capitalized.swift */,
 				B25A827E2B56A746003319E6 /* UserProperty.swift */,
 				B25A82822B56A774003319E6 /* URLSession+ext.swift */,
+				B25CDB142B56E5D900424E9A /* FoodListViewModel.swift */,
 				B25CDB342B56E7CB00424E9A /* Template.swift */,
 				B25CDB322B56E7BC00424E9A /* Calculator.swift */,
 			);

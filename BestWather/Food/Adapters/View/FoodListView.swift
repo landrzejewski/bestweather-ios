@@ -10,10 +10,8 @@ import Factory
 
 struct FoodListView: View {
     
-    @ObservedObject
-    var viewModel: FoodListViewModel
-    @Injected(\.orderViewModel)
-    var orderViewModel: OrderViewModel
+    @State var viewModel: FoodListViewModel
+    @Injected(\.orderViewModel) var orderViewModel: OrderViewModel
 
     var body: some View {
         NavigationView {

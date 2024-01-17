@@ -10,11 +10,9 @@ import Factory
 
 struct FoodDetailsView: View {
     
-    @Binding
-    var isVisible: Bool
+    @Binding var isVisible: Bool
     var viewModel: FoodViewModel
-    @Injected(\.orderViewModel)
-    var orderViewModel: OrderViewModel
+    @Injected(\.orderViewModel) var orderViewModel: OrderViewModel
     
     var body: some View {
         ZStack {

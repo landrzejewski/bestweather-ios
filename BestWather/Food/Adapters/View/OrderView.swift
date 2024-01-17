@@ -10,8 +10,7 @@ import Factory
 
 struct OrderView: View {
     
-    @ObservedObject
-    var viewModel: OrderViewModel
+    @State var viewModel: OrderViewModel
     
     var body: some View {
         ZStack{
