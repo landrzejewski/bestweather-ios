@@ -1,6 +1,6 @@
 //
 //  Fruits.swift
-//  GoodWeather
+//  Best Weather
 //
 //  Created by Łukasz Andrzejewski on 17/11/2023.
 //

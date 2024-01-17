@@ -293,11 +293,11 @@
 			isa = PBXGroup;
 			children = (
 				B25CDB262B56E78800424E9A /* BasicAnimations.swift */,
-				B25CDB302B56E79400424E9A /* Fruits.swift */,
-				B25CDB242B56E78800424E9A /* MatchedGeometryEffectAnimation.swift */,
 				B25CDB252B56E78800424E9A /* BottomMenuAnimation.swift */,
 				B25CDB272B56E78800424E9A /* ScrollAnimation.swift */,
 				B25CDB292B56E78800424E9A /* SegmentedViewAnimation.swift */,
+				B25CDB242B56E78800424E9A /* MatchedGeometryEffectAnimation.swift */,
+				B25CDB302B56E79400424E9A /* Fruits.swift */,
 			);
 			path = Animations;
 			sourceTree = "<group>";

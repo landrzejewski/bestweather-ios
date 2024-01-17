@@ -1,6 +1,6 @@
 //
 //  ScrollAnimation.swift
-//  GoodWeather
+//  Best Weather
 //
 //  Created by Łukasz Andrzejewski on 19/05/2022.
 //
